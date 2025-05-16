@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- ICON PAGE -->
-     <link rel="shortcut icon" href="">
+     <link rel="shortcut icon" href="logos/AvatarAUMA.jpg">
 
        <!-- ICONES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -25,7 +25,8 @@
     <title>ALUMA</title>
 </head>
 <body>
-    
+
+
     <!-- CABEÇALHO -->
     <header class="header">
         <div class="logo">
@@ -33,10 +34,10 @@
     </div>
 
     <nav class="navbar">
-        <a href="#"> Inicio </a>
-        <a href="#"> Quem Somos </a>
-        <a href="#"> Objetivo </a>
-        <a href="#"> Equipe </a>
+        <a href="#inicio"> Inicio </a>
+        <a href="#quem-somos"> Quem Somos </a>
+        <a href="#objetivo"> Objetivo </a>
+        <a href="#equipe"> Equipe </a>
     </nav>
 
 <!-- MOBILE -->
@@ -51,30 +52,44 @@
     </div>
 
     <nav class="mobile-nav">  <!-- COMEÇO NAVBAR MENU -->
-        <a href="#"> Inicio </a>
-        <a href="#"> Quem Somos </a>
-        <a href="#"> Objetivo </a>
-        <a href="#"> Equipe </a>
+        <a href="#inicio"> Inicio </a>
+        <a href="#quem-somos"> Quem Somos </a>
+        <a href="#objetivo"> Objetivo </a>
+        <a href="#equipe"> Equipe </a>
     </nav> <!-- FINAL NAVBAR MENU -->
     
 </div> <!-- FINAL MENU MOBILE-->
 <div class="overlay-menu" id="overlay-menu"></div>
 
+<!-- EFEITO DE SCROLL DO HEADER -->
+ <script>
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    if (window.scrollY > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
+
 <!-- FIM MOBILE -->
 
 </header>
-
 <!-- SLOGAN -->
-<div class="slogan-content">
-    <h2>Transformando o presente, inspirando o futuro.</h2>
+<div class="slogan-content" >
+    <h2 id="inicio">Transformando o presente, inspirando o futuro.</h2>
 </div>
 
 <!-- BOTAO PARA O CHATOT -->
 
 <div class="container-chat">
-   <a href="" class="btn-chat"> Acessar ALUMA </a>
+   <a href="" class="btn-chat"> Acessar ALUMA <i class="fa-solid fa-location-arrow"></i></a>
 </div>
 
+
+<!-- ANIMAÇAO BACKGROUND -->
 <div class="absolute inset-0 justify-center">
     <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
     <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div></div>
@@ -89,14 +104,18 @@
 
 
 <!-- CONTAINER QUEM SOMOS -->
+  <div class="id" id="quem-somos"></div>
  <div class="container-sobre" data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+     data-aos-easing="ease-in-sine" >
 <div class="sobre">
 <div class="box-sobre">
     <h1> Quem somos</h1>
     <br><br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur odit, officiis inventore omnis rerum totam excepturi minus. Quae quia adipisci molestiae laboriosam ab nulla id sunt delectus facilis repudiandae!</p>
+    <p>Nós somos a equipe Octopus, e temos o orgulho de apresentar a ALUMA — uma assistente virtual educacional baseada em inteligência artificial, criada especialmente para oferecer suporte técnico e pedagógico aos alunos e visitantes da turma de Manutenção de Computadores.
+
+    A ALUMA é mais do que uma ferramenta: ela é uma solução interativa, personalizável e em constante evolução, desenvolvida de alunos para alunos. Seu objetivo é facilitar o aprendizado, responder dúvidas, guiar estudos e promover a autonomia dos usuários no ambiente educacional.
+</p>
 </div>
 </div>
 
@@ -105,7 +124,11 @@
 <div class="box-sobre">
     <h1> Como surgiu</h1>
     <br><br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur odit, officiis inventore omnis rerum totam excepturi minus. Quae quia adipisci molestiae laboriosam ab nulla id sunt delectus facilis repudiandae!</p>
+    <p>A ALUMA surgiu na Fundação O Pão dos Pobres como um TCC, mas rapidamente se transformou em um projeto com grande potencial. Ganhou destaque após ser apresentada à SUCESU, que acreditou na ideia e nos incentivou a seguir adiante.
+
+    Com esse apoio, participamos do processo seletivo do Kickstart, programa do Instituto Caldeira em parceria com a Latromi, e fomos aprovados. Desde então, a ALUMA vem crescendo, ganhando visibilidade em eventos como o TechNow e abrindo portas para novas oportunidades.
+
+Agradecemos a todos os parceiros que acreditam no nosso projeto e seguem conosco nessa jornada.</p>
 </div>
 </div>
 </div>
@@ -115,53 +138,97 @@
 
 
 <!-- OBJETIVO -->
+ <div class="id" id="objetivo"></div>
 <div class="objetivo" data-aos="fade-up"
-data-aos-duration="3000">
-    <h2 class="titulo-obj"> Objetivo </h2>
+data-aos-duration="3000" id="">
+    <h2 class="titulo-obj" id=""> Objetivo </h2>
     <br><br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores possimus, tenetur consequuntur voluptas, assumenda porro quisquam provident unde, sint magnam earum ut dolorem architecto dolorum nam placeat vel ex.</p>
+        <p>A ALUMA é sua assistente virtual que vai auxiliar no seu desenvolvimento, vamos atuar com uma IA generativa que vai ser exclusiva a adapitada para o assunto que a instituição ou o usuario precisar, a ideia é preencher a lacuna que existe na educação implementando tecnologia de uma forma facil e acessivel, trazendo uma interface agradavel, respostas precisas e boa funcionalidade, a Luma esta pronta para atentender todas as necessidades que o usuario precisa.</p>
     </div>
 
-<!-- METAS -->
 
 <!-- CONTAINER ROXO -->
 <div class="container-roxo">
 
-<div class="titulo-metas">
-<h1>Metas</h1>
+<div class="titulo-timeline">
+<h1>Linha do Tempo</h1>
 </div>
 
-<div class="container-metas">
-    <div class="box-metas">
-        <h2> meta 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam amet illum magnam necessitatibus dolorem vero quae alias explicabo eligendi. Quaerat nihil totam incidunt consequuntur voluptatem voluptatibus sint reiciendis cumque.</p>
-    </div>
-
-    <div class="box-metas">
-        <h2> meta 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam amet illum magnam necessitatibus dolorem vero quae alias explicabo eligendi. Quaerat nihil totam incidunt consequuntur voluptatem voluptatibus sint reiciendis cumque.</p>
-    </div>
-</div>
-
-<div class="container-metas">
-    <div class="box-metas">
-        <h2> meta 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam amet illum magnam necessitatibus dolorem vero quae alias explicabo eligendi. Quaerat nihil totam incidunt consequuntur voluptatem voluptatibus sint reiciendis cumque.</p>
-    </div>
-
-    <div class="box-metas">
-        <h2> meta 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam amet illum magnam necessitatibus dolorem vero quae alias explicabo eligendi. Quaerat nihil totam incidunt consequuntur voluptatem voluptatibus sint reiciendis cumque.</p>
+<section class="timeline">
+   <div class="container-timeline" style="--dly: 1s">
+    <div class="texto-conteudo">
+        <h2>KickStart</h2>
+        <img 
+            src="fotos/kickstar.jpeg" 
+            alt="Imagem do evento" 
+            class="img-timeline"
+        >
+        <h2>21/04/2025</h2>
+        <p>
+            Nossa equipe participou do programa Kickstart, do Instituto Caldeira, uma imersão voltada ao desenvolvimento de startups e soluções inovadoras. Ao longo da jornada, contamos com mentorias, conexões estratégicas e experiências práticas. Com muito orgulho, fomos os ganhadores desta edição, resultado do trabalho intenso e do nosso compromisso com a inovação e o impacto real.
+        </p>
     </div>
 </div>
 
 
+    <!-- EVENTO 2 -->
+   <div class="container-timeline" style="--dly: 1s">
+    <div class="texto-conteudo">
+        <h2>TECHNOW</h2>
+        <img 
+            src="fotos/technowevento.JPG" 
+            alt="Imagem do evento" 
+            class="img-timeline"
+        >
+        <h2>25/04/2025</h2>
+        <p>
+            Nossa equipe foi convidada pela SUCESU a participar da TechNow, foi uma experiência extremamente enriquecedora, onde tivemos a oportunidade de trocar conhecimentos, acompanhar conteúdos de alto nível e interagir com profissionais e empresas referência no setor. Agradecemos à SUCESU pelo convite e pela oportunidade de fazer parte desse ambiente tão inspirador e transformador.
+        </p>
+    </div>
 </div>
+
+
+
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const timeline = document.querySelector(".timeline");
+    const blocos = document.querySelectorAll(".container-timeline");
+
+    // Ativa a linha central da timeline
+    const linhaObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                timeline.classList.add("linha-ativa");
+            }
+        });
+    }, { threshold: 0.1 });
+    linhaObserver.observe(timeline);
+
+    // Ativa os blocos individualmente ao entrar na tela
+    const blocoObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("ativo");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    blocos.forEach(bloco => blocoObserver.observe(bloco));
+});
+</script>
+
+</section>
+
+</div>
+
+<!-- PARALLAX -->
+ <section class="parallax"></section>
 
 
 <!-- EQUIPE -->
 
-<h1 class="titulo-equipe">
+<h1 class="titulo-equipe" id="equipe">
     Conheça a equipe por trás da ALUMA
 </h1>
 
@@ -169,61 +236,57 @@ data-aos-duration="3000">
 
     <!-- EDUARDA -->
     <div class="box-equipe">
-        <img src="https://img.freepik.com/vetores-gratis/circulo-azul-com-usuario-branco_78370-4707.jpg?semt=ais_hybrid&w=740" alt="" class="foto">
+        <img src="fotos/eduarda.foto.jpeg" alt="" class="foto">
         <h2 class="nome"> Eduarda Souza</h2>
         <h3 class="sub"> Dev / Designer </h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae sequi quod. Nemo, repellendus saepe aliquam neque asperiores est maiores beatae accusantium sed. Dolorem quod mollitia doloribus voluptatibus quasi totam!</p>
+        <p>"Sonhos exigem paciência no resultado e dedicação no processo"</p>
 
         <br>
         <br>
         <div class="icons-redes">
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-square-github"></i></a>
-        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-nfc-directional"></i></a>
+        <a href="https://www.linkedin.com/in/eduarda-souza-3157942b0/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/EduuhSouza"><i class="fa-brands fa-square-github"></i></a>
         </div>
     </div>
 
     <!-- GABRIEL -->
     <div class="box-equipe">
-        <img src="https://img.freepik.com/vetores-gratis/circulo-azul-com-usuario-branco_78370-4707.jpg?semt=ais_hybrid&w=740" alt="" class="foto">
-        <h2 class="nome"> Eduarda Souza</h2>
-        <h3 class="sub"> Dev / Designer </h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae sequi quod. Nemo, repellendus saepe aliquam neque asperiores est maiores beatae accusantium sed. Dolorem quod mollitia doloribus voluptatibus quasi totam!</p>
+        <img src="fotos/foto.gabriel.jpg" alt="" class="foto">
+        <h2 class="nome"> Gabriel Mendes</h2>
+        <h3 class="sub"> Desenvolvedor Full Stack </h3>
+        <p>"Se focar apenas na folha não verá a floresta inteira"</p>
 
         <br>
         <br>
         <div class="icons-redes">
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-square-github"></i></a>
-        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-nfc-directional"></i></a>
+        <a href="https://www.linkedin.com/in/gabrielvmendes-dev/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Gabriel-V-Mendes"><i class="fa-brands fa-square-github"></i></a>
         </div>
     </div>
 
 
     <!-- Henrike -->
     <div class="box-equipe">
-        <img src="https://img.freepik.com/vetores-gratis/circulo-azul-com-usuario-branco_78370-4707.jpg?semt=ais_hybrid&w=740" alt="" class="foto">
-        <h2 class="nome"> Eduarda Souza</h2>
-        <h3 class="sub"> Dev / Designer </h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae sequi quod. Nemo, repellendus saepe aliquam neque asperiores est maiores beatae accusantium sed. Dolorem quod mollitia doloribus voluptatibus quasi totam!</p>
+        <img src="fotos/foto.henrike.jpg" alt="" class="foto">
+        <h2 class="nome"> Henrike Pajares</h2>
+        <h3 class="sub"> Desenvolvedor Full Stack </h3>
+        <p> "Carpe Diem"</p>
 
         <br>
         <br>
+        <br>
+        
         <div class="icons-redes">
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-square-github"></i></a>
-        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-nfc-directional"></i></a>
+        <a href="https://www.linkedin.com/in/henrikebraga/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://henrike-pb.github.io/"><i class="fa-brands fa-nfc-directional"></i></a>
         </div>
     </div>
 
     <!-- Leonardo -->
     <div class="box-equipe">
         <img src="https://img.freepik.com/vetores-gratis/circulo-azul-com-usuario-branco_78370-4707.jpg?semt=ais_hybrid&w=740" alt="" class="foto">
-        <h2 class="nome"> Eduarda Souza</h2>
-        <h3 class="sub"> Dev / Designer </h3>
+        <h2 class="nome"> Leonardo Kubiaki</h2>
+        <h3 class="sub"> ... </h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae sequi quod. Nemo, repellendus saepe aliquam neque asperiores est maiores beatae accusantium sed. Dolorem quod mollitia doloribus voluptatibus quasi totam!</p>
 
         <br>
@@ -238,28 +301,32 @@ data-aos-duration="3000">
 </div>
 
 
-<div class="footer">
-  <footer>
-    <div class="icons-contato">
-      <a href=""><i class="fa-solid fa-comment"></i></a>
-      <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+
+<!-- FOOOOOOOOTEEEEEEEEEER -->
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <p><strong>Contato:</strong><br> Email: <span>lumaprojeto9@gmail.com</span></p>
+
+              <div class="footer-redes">
+                <a href="https://www.instagram.com/aluma_projeto/?next=%2F" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-logo">
+            <img src="logos/Projeto LUMA.jpg" alt="Logo da ALUMA">
+        </div>
+
+        <div class="footer-right">
+            <p><strong>Sobre o Projeto:</strong><br> ALUMA é uma assistente virtual educacional desenvolvida para oferecer suporte técnico e pedagógico a alunos e visitantes da turma de manutenção de computadores.</p>
+
+        </div>
     </div>
 
-    <div class="center-content">
-      <div class="logo-octopus">
-        <img src="logos/Manutenção_PC_Logos-removebg-preview.png" alt="">
-      </div>
-      
-      <div class="copy">
-        <p>© 2025 ALUMA. Todos os direitos reservados.</p>
-      </div>
-    </div>
+</footer>
 
-    <div class="lorem-text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </footer>
-</div>
+
 
 
 
